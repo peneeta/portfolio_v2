@@ -1,40 +1,55 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Montserrat+Alternates:ital,wght@0,200;0,600;1,200&family=Rubik:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,600;1,200&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@1,700&display=swap");
+@import "tailwindcss";
 
-:root {
-  /* Define color schemes */
-  --baby-blue: #C7ECFF;
-  --dodger-blue: #4C9CFD;
-  --link-blue: #0072bf;
-  --light-green: #61E786;
-  --honeydew: #EDFFEC;
-  --off-white: #fffefb;
-  --light-pink: #E34A6F;
-  --custom-black: #2D2A32;
+:root{
+  --baby-blue: #c7ecff;
+  --dodger-blue: #4c9cfd;
 }
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/* Define color schemes */
+@theme {
+  --color-baby-blue: #c7ecff;
+  --color-dodger-blue: #4c9cfd;
+  --color-link-blue: #0072bf;
+  --color-light-green: #61e786;
+  --color-honeydew: #edffec;
+  --color-off-white: #ffffff;
+  --color-hot-pink: #e34a6f;
+  --color-custom-black: #2d2a32;
+  --color-translucent-white: rgba(255, 255, 255, 0.7);
+}
+
+@layer base {
+  h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 body {
   background-color: var(--off-white);
-  overflow: hidden;
 }
 
-.montserrat-alternates-extralight {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.montserrat-alternates-semibold {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 
 .montserrat-alternates-extralight-italic {
   font-family: "Montserrat Alternates", sans-serif;
@@ -42,18 +57,12 @@ body {
   font-style: italic;
 }
 
-.rubik-bold {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: italic;
-}
+
 
 /* // <weight>: Use a value from 400 to 700
 // <uniquifier>: Use a unique and descriptive class name */
-
-.kameron-body{
-  font-family: "Kameron", serif;
+.raleway-body {
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;

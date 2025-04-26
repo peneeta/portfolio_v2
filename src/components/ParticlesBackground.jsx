@@ -18,13 +18,12 @@ function ParticlesBackground() {
         }
       },
       color: {
-        value: ["#4C9CFD", "#61E786", "#E34A6F"]
+        value: ["#4C9CFD", "#61E786"]
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#000000"
         },
         polygon: {
           nb_sides: 5
@@ -99,7 +98,7 @@ function ParticlesBackground() {
   
   return (
     <>
-      <div style={{ position: "relative", height: "100vh" }}>
+      <div className="fixed h-vh w-vh top-0 left-0" style={{zIndex:-1}}>
         <Particles id="tsparticles" init={particlesInit} options={particlesOptions} />
       </div>
     </>

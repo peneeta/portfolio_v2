@@ -13,7 +13,7 @@ import './index.css'
 
 // Components
 import Navbar from './components/Navbar';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 // Pages
 import Home from './pages/Home';
@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </Router>
 
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
