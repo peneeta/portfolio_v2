@@ -117,9 +117,9 @@ function Home() {
                         </path>
                     </svg>
                 </div>
-                
+
                 <div className="content mx-20 max-w-3xl my-36">
-                    <h2 className="text-center">Projects and Experience</h2>
+                    <h2 className="text-center">Projects</h2>
                     <p>Here's some of the things I've worked on over the years. Please visit my LinkedIn for the full list!</p>
                 </div>
             </div>

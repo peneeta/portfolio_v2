@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import workingLottieAnimation from "../../public/assets/working_lottie.json"
+import workingLottieAnimation from "../lottiefiles/working_lottie.json"
 
 function WorkingLottie() {
     return (

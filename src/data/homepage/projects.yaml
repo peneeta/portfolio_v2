@@ -1,0 +1,54 @@
+Research:
+  - title: "Getting Started with Node.js"
+    date: "2025-04-05"
+    description: >
+      Learn the basics of building backend applications with Node.js, Express, and RESTful APIs.
+    link: "https://example.com/nodejs-guide"
+    tags:
+      - nodejs
+      - backend
+      - javascript
+
+Course Projects:
+  - title: "Getting Started with Node.js"
+    date: "2025-04-05"
+    description: >
+      Learn the basics of building backend applications with Node.js, Express, and RESTful APIs.
+    link: "https://example.com/nodejs-guide"
+    tags:
+      - nodejs
+      - backend
+      - javascript
+
+Web Apps:
+  - title: "Portfolio V2"
+    date: "2025-02-20"
+    description: >
+      Second iteration of my personal website, you're on it! Made with React + Vite, first designed in Figma before implementation.
+    link: "https://github.com/peneeta/portfolio_v2"
+    skills:
+      - Tailwind
+      - React
+      - JavaScript
+      - Vite
+
+  - title: "MySpotifyGenome"
+    date: "Summer 2025"
+    description: >
+      Small app that generates musical DNA using PaperJS based on artist obscurity from a user's top artists this month on Spotify. Note that due to Spotify's limits on API calls this is not functional for users.
+    link: "https://github.com/peneeta/my-spotify-genome"
+    skills:
+      - PaperJS
+      - Vite
+      - React
+      - TypeScript
+
+  - title: "Virginia iGEM 2022"
+    date: "May 2022-October 2022"
+    description: >
+      Virginia iGEM 2022 team website, developed for our synthetic biology project AtheroSHuffle: A Novel Point-of-Care Detection Method for Early Atherosclerosis. Largest (and first) web project I've ever developed.
+    link: "https://2022.igem.wiki/virginia/"
+    skills:
+      - Flask
+      - HTML/CSS
+      - Bootstrap
