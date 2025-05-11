@@ -30,7 +30,7 @@ function Navbar ({ observerRefs }){
 
             <ul id="nav-links" data-visible='false' className="nav-links flex-row items-center justify-center gap-1 bg-translucent-white"> 
                 <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
-                <li><NavLink to="/projects" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>Projects</NavLink></li>
+                {/* <li><NavLink to="/projects" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>Projects</NavLink></li> */}
                 <li><NavLink to="/blog" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>Blog</NavLink></li>
                 {/* <li><NavLink to="/fun-stuff" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>Fun Stuff</NavLink></li> */}
             </ul>

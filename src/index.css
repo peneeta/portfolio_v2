@@ -10,6 +10,7 @@
 /* Define color schemes */
 @theme {
   --color-baby-blue: #c7ecff;
+  --color-barely-blue: #F0FAFF;
   --color-dodger-blue: #4c9cfd;
   --color-link-blue: #0072bf;
   --color-light-green: #61e786;
@@ -24,6 +25,7 @@
   h1 {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 200;
+    font-size: var(--text-6xl);
     font-style: normal;
   }
 
@@ -31,11 +33,13 @@
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-style: italic;
+    font-size: var(--text-3xl);
+    margin-bottom: 2rem;
   }
 
   h3 {
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
   }
 
@@ -43,6 +47,13 @@
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--color-dodger-blue);
   }
 }
 

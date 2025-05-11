@@ -9,6 +9,9 @@ function ParticlesBackground() {
   };
 
   const particlesOptions = {
+    fullScreen: {
+      enable: false, // ❗️This disables fullscreen auto-canvas
+    },
     particles: {
       number: {
         value: 200,
@@ -18,13 +21,10 @@ function ParticlesBackground() {
         }
       },
       color: {
-        value: ["#4C9CFD", "#61E786"]
+        value: ["#00A6FB", "#61E786", "#FCB001"]
       },
       shape: {
         type: "circle",
-        stroke: {
-          width: 0,
-        },
         polygon: {
           nb_sides: 5
         },
@@ -34,35 +34,35 @@ function ParticlesBackground() {
         random: false
       },
       size: {
-        value: 4,
+        value: 3,
         random: true
       },
       links: {
         enable: true,
-        distance: 150,
-        color: "#4C9CFD",
+        distance: 180,
+        color: "#00A6FB",
         opacity: 0.4,
         width: 1
       },
       move: {
         enable: true,
-        speed: 0.5,
+        speed: 0.4,
         direction: "none",
         random: false,
         straight: false,
         outMode: "out",
-        bounce: true
+        bounce: false
       }
     },
     interactivity: {
       detectsOn: "canvas",
       events: {
         onhover: {
-          enable: false,
+          enable: true,
           mode: "grab"
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: "push"
         },
         resize: true
@@ -89,7 +89,7 @@ function ParticlesBackground() {
           quantity: 6
         },
         remove: {
-          quantity: 4
+          quantity: 10
         }
       }
     },
@@ -98,8 +98,12 @@ function ParticlesBackground() {
   
   return (
     <>
-      <div className="fixed h-vh w-vh top-0 left-0" style={{zIndex:-1}}>
-        <Particles id="tsparticles" init={particlesInit} options={particlesOptions} />
+      <div className="absolute top-0 left-0 w-full h-120 -z-10">
+        <Particles id="tsparticles" 
+        init={particlesInit} 
+        options={particlesOptions}
+        className="w-full h-full"
+        canvasClassName="w-full h-full"/>
       </div>
     </>
   )
