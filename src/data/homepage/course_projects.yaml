@@ -1,0 +1,10 @@
+- title: "Getting Started with Node.js"
+  date: "2025-04-05"
+  description: >
+    Learn the basics of building backend applications with Node.js, Express, and RESTful APIs.
+  link: "https://example.com/nodejs-guide"
+  tags:
+    - nodejs
+    - backend
+    - javascript
+

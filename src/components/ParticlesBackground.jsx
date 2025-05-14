@@ -58,7 +58,7 @@ function ParticlesBackground() {
       detectsOn: "canvas",
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: "grab"
         },
         onclick: {

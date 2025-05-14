@@ -1,5 +1,6 @@
 import ParticlesBackground from "../components/ParticlesBackground"
 import portrait from "/assets/portrait.png";
+import ProjectList from "../components/ProjectList";
 import WorkingLottie from "../components/WorkingLottie";
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
 
                 <ParticlesBackground/>
 
-                <div className="about absolute flex flex-row justify-center items-center gap-10">
+                <div className="about absolute flex flex-row justify-center items-center gap-8 bg-translucent-white rounded-3xl p-4">
 
                     {/* Portrait Image*/}
                     <div className="portrait w-42 z-10">
@@ -25,9 +26,9 @@ function Home() {
                     </div>
 
                     {/* Header and links */}
-                    <div className="desc flex flex-col justify-center items-start gap-1 bg-translucent-white rounded-md p-10 ">
-                        <h1 className="mb-7">Peneeta Wojcik</h1>
-                        <p>📍 Pittsburgh, PA</p>
+                    <div className="desc flex flex-col justify-center items-start gap-1 p-4">
+                        <h1 className="mb-4">Peneeta Wojcik</h1>
+                        <h3 className="mb-3">📍 Pittsburgh, PA</h3>
                         <a href="https://github.com/peneeta">https://github.com/peneeta</a>
                         <a href="https://www.linkedin.com/in/peneeta/">https://www.linkedin.com/in/peneeta/</a>
                     </div>
@@ -105,23 +106,27 @@ function Home() {
             <div className="projects relative flex flex-col justify-center items-center">
 
                 {/* Wave divider for the previous section */}
-                <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
-                    <svg class="relative block w-[calc(126%+1.3px)] h-[158px] -scale-x-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
+                    <svg className="relative block w-[calc(126%+1.3px)] h-[158px] -scale-x-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,
                                 172-41.86,82.39-16.72,168.19-17.73,
                                 250.45-.39C823.78,31,906.67,72,
                                 985.66,92.83c70.05,18.48,146.53,26.09,
                                 214.34,3V0H0V27.35A600.21,600.21,
                                 0,0,0,321.39,56.44Z"
-                            class="fill-barely-blue">
+                            className="fill-barely-blue">
                         </path>
                     </svg>
                 </div>
 
-                <div className="content mx-20 max-w-3xl my-36">
+
+                <div className="content max-w-xl mx-20 mt-36 text-center">
                     <h2 className="text-center">Projects</h2>
-                    <p>Here's some of the things I've worked on over the years. Please visit my LinkedIn for the full list!</p>
+                    <p >Here are some of the projects I've worked on over the years. For a full list, check out my LinkedIn!</p>
                 </div>
+
+                <ProjectList/>
+
             </div>
 
             {/* Lottie animation and final call-to-action */}

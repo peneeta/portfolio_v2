@@ -3,16 +3,23 @@
 @import "tailwindcss";
 
 :root{
-  --baby-blue: #c7ecff;
+  --baby-blue: #DFF3FF;
   --dodger-blue: #4c9cfd;
 }
 
 /* Define color schemes */
 @theme {
-  --color-baby-blue: #c7ecff;
+  --color-baby-blue: #DFF3FF;
   --color-barely-blue: #F0FAFF;
   --color-dodger-blue: #4c9cfd;
   --color-link-blue: #0072bf;
+
+  --color-dark-purple: #611BAC;
+  --color-baby-purple: #F1E8FF;
+
+  --color-tangerine: #FCB001;
+  --color-baby-orange: #FFF7E4;
+
   --color-light-green: #61e786;
   --color-honeydew: #edffec;
   --color-off-white: #ffffff;
@@ -40,6 +47,7 @@
   h3 {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 200;
+    font-size: var(--text-lg);
     font-style: normal;
   }
 
@@ -54,6 +62,7 @@
     font-weight: 400;
     text-decoration: underline;
     color: var(--color-dodger-blue);
+    font-size: var(--text-sm);
   }
 }
 
