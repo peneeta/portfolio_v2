@@ -1,0 +1,16 @@
+[
+    {
+      "title": "Active Learning for Cell Type Annotation",
+      "date": "May 2025",
+      "description": "Course project for <course>. Tested four active learning methods for cell type annotation using a challenging PBMC dataset and a two hidden layer MLP as the base learner.",
+      "link": "todo",
+      "skills": []
+    },
+    {
+        "title": "Inferring Horizontal Gene Transfer Events in Phylogeneic Tree Construction",
+        "date": "March 2025",
+        "description": "Revise",
+        "link": "https://github.com/peneeta/HGTPhylogeny",
+        "skills": []
+      }
+]

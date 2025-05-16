@@ -1,5 +1,11 @@
 import ParticlesBackground from "../components/ParticlesBackground"
 import portrait from "/assets/portrait.png";
+import { Github, Linkedin } from 'lucide-react';
+
+// Render text from an external file for easier editing
+import Markdown from "markdown-to-jsx";
+import About from "../data/homepage/about.md?raw";
+
 import ProjectList from "../components/ProjectList";
 import WorkingLottie from "../components/WorkingLottie";
 
@@ -28,9 +34,23 @@ function Home() {
                     {/* Header and links */}
                     <div className="desc flex flex-col justify-center items-start gap-1 p-4">
                         <h1 className="mb-4">Peneeta Wojcik</h1>
-                        <h3 className="mb-3">📍 Pittsburgh, PA</h3>
-                        <a href="https://github.com/peneeta">https://github.com/peneeta</a>
-                        <a href="https://www.linkedin.com/in/peneeta/">https://www.linkedin.com/in/peneeta/</a>
+
+                        <a href="https://github.com/peneeta" target="_blank">
+
+                            <div className="flex flex-row justify-center items-center gap-2">
+                                <Github size={16}/> 
+                                https://github.com/peneeta
+                            </div>
+            
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/peneeta/" target="_blank"> 
+                        
+                            <div className="flex flex-row justify-center items-center gap-2">
+                                <Linkedin size={16}/> 
+                                https://www.linkedin.com/in/peneeta/
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -50,22 +70,9 @@ function Home() {
 
             {/* About section */}
             <div className="about relative flex flex-col justify-center items-center">
-                <div className="content mx-10 mt-26 mb-40 p-4 max-w-3xl">
-
+                <div className="content mx-10 mt-26 mb-40 p-4 max-w-2xl">
                     <h2 className="text-center">About Me</h2>
-
-                        <p>
-                            I’m a M.S. student at Carnegie Mellon University studying Automated Science. Before that, I got my B.S. in Biomedical Engineering at the University of Virginia. 
-                        </p>
-                        
-                        <p>
-                            I’ve worked on many projects spanning synthetic biology as an iGEM team member to single cell RNA-seq analysis. I’ve also developed protocols for liquid handlers and a fully-integrated automated lab setup. I’m super excited about the trajectory of closed-loop laboratory automation and maximizing efficiency in the lab. (Seriously, who wants to be stuck pipetting for hours on end?)
-                        </p>
-
-                        <p>
-                            In my free time I love to play guitar, read novels, explore Spotify’s most underrated artists, and work on small front-end projects like this one. Feel free to connect on LinkedIn :)
-                        </p>
-
+                    <Markdown>{About}</Markdown>
                 </div>
 
                 {/* Wave divider light blue */}

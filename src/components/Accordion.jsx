@@ -9,7 +9,7 @@ function Accordion({title, strokeColor, fillColor, children}) {
 
     return (
         <>
-            <div className={`w-full rounded-full mb-4 border ${strokeColor} ${fillColor}`}>
+            <div className={`w-full rounded-full mt-4 border ${strokeColor} ${fillColor}`}>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="w-full relative flex items-center justify-center p-2 font-medium"
@@ -21,7 +21,7 @@ function Accordion({title, strokeColor, fillColor, children}) {
                 </button>
             </div>
             {isOpen && (
-                    <div className="p-4 space-y-4">
+                    <div className="py-4 space-y-4">
                         {children}
                     </div>
             )}
