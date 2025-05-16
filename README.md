@@ -3,7 +3,7 @@ Peneeta Wojcik
 
 ---
 
-The second iteration of my portfolio site (visit it here: www.peneeta.com
+The second iteration of my portfolio site (visit it here!! www.peneeta.com)
 
 ---
 
