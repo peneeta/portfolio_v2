@@ -137,9 +137,9 @@ function Home() {
 
             {/* Lottie animation and final call-to-action */}
             <div className="final flex flex-col items-center justify-center">
-                <div className="content relative">
+                <div className="content relative mx-10">
                     <h2 className="text-center">Want to work together?</h2>
-                    <p>Feel free to connect and message me on LinkedIn or send me an email!</p>
+                    <p className="text-center max-w-md">Feel free to connect and message me on LinkedIn or send me an email!</p>
                     <WorkingLottie />
                 </div>
             </div>
