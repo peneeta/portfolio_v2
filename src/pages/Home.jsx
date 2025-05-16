@@ -112,7 +112,7 @@ function Home() {
             <div className="projects relative flex flex-col justify-center items-center">
 
                 {/* Wave divider for the previous section */}
-                <div className="absolute top-0 left-0 overflow-hidden leading-none">
+                <div className="absolute top-0 left-0 overflow-hidden leading-none w-full">
                     <svg className="relative block w-[calc(126%+1.3px)] h-[158px] -scale-x-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,
                                 172-41.86,82.39-16.72,168.19-17.73,
