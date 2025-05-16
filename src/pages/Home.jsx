@@ -2,20 +2,20 @@ import ParticlesBackground from "../components/ParticlesBackground"
 import portrait from "/assets/portrait.png";
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-// Render text from an external file for easier editing
+// Render text from external files for easier editing
 import Markdown from "markdown-to-jsx";
 import About from "../data/homepage/about.md?raw";
 import Skills from "../components/Skills";
-
 import ProjectList from "../components/ProjectList";
+
 import WorkingLottie from "../components/WorkingLottie";
 
-
+// HOMEPAGE PARENT CONTAINER
+// Contains everything you see on the homepage
 function Home() {
 
     return (
         <>
-            
             {/* Hero section with ParticlesJS background */}
             <div className="hero relative min-h-screen md:min-h-screen lg:min-h-130 w-full flex flex-col items-center justify-center z-0">
 
@@ -104,7 +104,6 @@ function Home() {
             <div className="skills relative flex flex-col justify-center items-center bg-barely-blue">
                 <div className="content mx-10 my-26 max-w-3xl">
                     <h2 className="text-center">Skills</h2>
-
                     <Skills/>
                 </div>
             </div>

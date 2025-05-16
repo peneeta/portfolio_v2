@@ -1,5 +1,8 @@
 import DogLottie from "../components/DogLottie"
 
+// MAIN BLOG PARENT CONTAINER
+// Contains everything you see on the Blog page
+// Still working on this!
 function Blog() {
 
     return(
