@@ -1,13 +1,15 @@
 import ParticlesBackground from "../components/ParticlesBackground"
 import portrait from "/assets/portrait.png";
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 // Render text from an external file for easier editing
 import Markdown from "markdown-to-jsx";
 import About from "../data/homepage/about.md?raw";
+import Skills from "../components/Skills";
 
 import ProjectList from "../components/ProjectList";
 import WorkingLottie from "../components/WorkingLottie";
+
 
 function Home() {
 
@@ -15,11 +17,11 @@ function Home() {
         <>
             
             {/* Hero section with ParticlesJS background */}
-            <div className="hero relative h-120 w-full flex flex-col items-center justify-center z-0">
+            <div className="hero relative min-h-screen md:min-h-screen lg:min-h-130 w-full flex flex-col items-center justify-center z-0">
 
                 <ParticlesBackground/>
 
-                <div className="about absolute flex flex-row justify-center items-center gap-8 bg-translucent-white rounded-3xl p-4">
+                <div className="about absolute flex md:flex-row flex-wrap justify-center items-center gap-3 bg-translucent-white rounded-3xl p-10">
 
                     {/* Portrait Image*/}
                     <div className="portrait w-42 z-10">
@@ -32,8 +34,8 @@ function Home() {
                     </div>
 
                     {/* Header and links */}
-                    <div className="desc flex flex-col justify-center items-start gap-1 p-4">
-                        <h1 className="mb-4">Peneeta Wojcik</h1>
+                    <div className="desc flex flex-col flex-wrap justify-center items-center md:items-start gap-1 p-4">
+                        <h1 className="mb-4 text-center md:text-left">Peneeta Wojcik</h1>
 
                         <a href="https://github.com/peneeta" target="_blank">
 
@@ -49,6 +51,14 @@ function Home() {
                             <div className="flex flex-row justify-center items-center gap-2">
                                 <Linkedin size={16}/> 
                                 https://www.linkedin.com/in/peneeta/
+                            </div>
+                        </a>
+
+                        <a href="mailto:peneeta@cmu.edu"> 
+                        
+                            <div className="flex flex-row justify-center items-center gap-2">
+                                <Mail size={16}/> 
+                                peneeta@cmu.edu
                             </div>
                         </a>
                     </div>
@@ -93,19 +103,9 @@ function Home() {
             {/* Skills */}
             <div className="skills relative flex flex-col justify-center items-center bg-barely-blue">
                 <div className="content mx-10 my-26 max-w-3xl">
-                    <h2 className="text-center">Tools I've worked with</h2>
+                    <h2 className="text-center">Skills</h2>
 
-                    <div className="list1">
-                        <h3>Automation</h3>
-                    </div>
-
-                    <div className="list1">
-                        <h3>Programming and Frameworks</h3>
-                    </div>
-
-                    <div className="list1">
-                        <h3>Software/Packages</h3>
-                    </div>
+                    <Skills/>
                 </div>
             </div>
 

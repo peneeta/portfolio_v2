@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Main",
+        "skills": ["Machine learning", "Data analysis", "Bioinformatics", "Single Cell/Bulk RNAseq Analysis"]
+    },
+    {
+      "title": "Automation",
+      "skills": ["CyBio FeliX Liquid Handler", "Emerald Cloud Lab", "Thermo Fisher Momentum", "OpenTrons Liquid Handler"]
+    },
+    {
+        "title": "Programming and Frameworks",
+        "skills": ["Go", "Python", "R", "LateX", "Vite", "Tailwind", "React", "HTML/CSS"]
+    },
+    {
+        "title": "Software/Packages",
+        "skills": ["Seurat", "ScanPy", "PyTorch", "scikit-learn"]
+    }
+]

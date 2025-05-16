@@ -3,7 +3,7 @@ import workingLottieAnimation from "../lottiefiles/working_lottie.json"
 
 function WorkingLottie() {
     return (
-        <div className="w-lg h-auto">
+        <div className="w-md h-auto">
             <Lottie 
             animationData={workingLottieAnimation} />
         </div>

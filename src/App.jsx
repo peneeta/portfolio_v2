@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 // Stylesheets
-import './App.css'
 import './index.css'
 
 // Components
@@ -17,7 +16,7 @@ import Footer from './components/Footer';
 
 // Pages
 import Home from './pages/Home';
-//import Projects from './pages/projects';
+import Blog from './pages/Blog';
 
 function App() {
 
@@ -27,8 +26,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          {/* <Route exact path="/projects" element={<Projects/>} />
-          <Route exact path="/about" element={<About/>} /> */}
+          <Route exact path="/blog" element={<Blog/>} />
         </Routes>
       </Router>
 

@@ -25,7 +25,7 @@
   --color-off-white: #ffffff;
   --color-hot-pink: #e34a6f;
   --color-custom-black: #2d2a32;
-  --color-translucent-white: rgba(255, 255, 255, 0.7);
+  --color-translucent-white: rgba(255, 255, 255, 0.8);
 }
 
 @layer base {

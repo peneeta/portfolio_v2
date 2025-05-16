@@ -6,7 +6,7 @@ nav {
 }
 
 .nav-links li {
-  margin-block: 0.5rem;
+  margin-block: 0.1rem;
   list-style: none;
 }
 
@@ -45,7 +45,7 @@ nav {
     gap: 2rem;
     z-index: 10;
     position: fixed;
-    padding: 2rem;
+    padding: 1.3rem;
     width: 100vw;
   }
 }
@@ -57,11 +57,11 @@ nav {
     justify-content: center;
     gap: 2rem;
     z-index: 10;
-    margin-top: 1.7rem;
     position: fixed;
-    padding: 1.5rem;
+    padding: 1.3rem;
     width: 100vw;
   }
+
 }
 
 @media (max-width: 585px) {

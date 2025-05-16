@@ -14,7 +14,7 @@ function ParticlesBackground() {
     },
     particles: {
       number: {
-        value: 200,
+        value: 250,
         density: {
           enable: true,
           value_area: 800
@@ -98,7 +98,7 @@ function ParticlesBackground() {
   
   return (
     <>
-      <div className="absolute top-0 left-0 w-full h-120 -z-10">
+      <div className="absolute inset-0 -z-10">
         <Particles id="tsparticles" 
         init={particlesInit} 
         options={particlesOptions}
