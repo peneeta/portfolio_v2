@@ -112,7 +112,7 @@ function Home() {
             <div className="projects relative flex flex-col justify-center items-center">
 
                 {/* Wave divider for the previous section */}
-                <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
+                <div className="absolute top-0 left-0 overflow-hidden leading-none">
                     <svg className="relative block w-[calc(126%+1.3px)] h-[158px] -scale-x-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,
                                 172-41.86,82.39-16.72,168.19-17.73,
@@ -126,7 +126,7 @@ function Home() {
                 </div>
 
 
-                <div className="content max-w-xl mx-20 mt-36 text-center">
+                <div className="content max-w-xl mx-10 mt-36 text-center">
                     <h2 className="text-center">Projects</h2>
                     <p >Here are some of the projects I've worked on over the years. For a full list, check out my LinkedIn!</p>
                 </div>
@@ -136,10 +136,10 @@ function Home() {
             </div>
 
             {/* Lottie animation and final call-to-action */}
-            <div className="final flex flex-col items-center justify-center">
-                <div className="content relative mx-10">
-                    <h2 className="text-center">Want to work together?</h2>
-                    <p className="text-center max-w-md">Feel free to connect and message me on LinkedIn or send me an email!</p>
+            <div className="final-section flex flex-col justify-center items-center mx-10">
+                <div className="content max-w-sm text-center">
+                    <h2>Want to work together?</h2>
+                    <p>Feel free to connect and message me on LinkedIn or send me an email!</p>
                     <WorkingLottie />
                 </div>
             </div>

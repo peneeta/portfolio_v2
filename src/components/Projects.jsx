@@ -19,10 +19,15 @@ function Projects({strokeColor, project}) {
                     ))}
                 </div>
 
-                <div className="links">
-                    <a href={project.link} 
-                    target="_blank">🔗 {project.link}</a>
-                </div>
+                {/* Render the link only if there is a link in the JSON file */}
+                {project.link && (
+                    <div className="links">
+                        <a href={project.link} 
+                        target="_blank">🔗 {project.link}</a>
+                    </div>
+                )}
+
+
             </div>
         </>
     )

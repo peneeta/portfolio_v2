@@ -2,15 +2,22 @@
     {
       "title": "Active Learning for Cell Type Annotation",
       "date": "May 2025",
-      "description": "Course project for <course>. Tested four active learning methods for cell type annotation using a challenging PBMC dataset and a two hidden layer MLP as the base learner.",
-      "link": "todo",
-      "skills": []
+      "description": "Group course project for 02-750 Automation of Scientific Research. Evaluated four active learning methods for cell type annotation using a challenging PBMC dataset and a two hidden layer MLP as the base learner.",
+      "link": "https://drive.google.com/file/d/1KZS69Je_dEoyrZwO97UCJuApL4Uhc6xk/view?usp=sharing",
+      "skills": ["LateX", "PyTorch", "Deep Learning", "Active Learning"]
+    },
+    {
+      "title": "Closed Loop Automated Battleship",
+      "date": "May 2025",
+      "description": "Automation lab project combining a liquid handler, plate reader, and python scripts to play a closed-loop battleship game using the Thermo Fisher Momentum suite (code not provided to preserve the academic challenge).",
+      "link": "https://drive.google.com/file/d/1C8cfZZ5ryb3p_zrlbpYtikJMr4l6GsO3/view?usp=drive_link",
+      "skills": ["Momentum", "CyBio FeliX Liquid Handler", "Python", "Powershell Scripting"]
     },
     {
         "title": "Inferring Horizontal Gene Transfer Events in Phylogeneic Tree Construction",
-        "date": "March 2025",
-        "description": "Revise",
-        "link": "https://github.com/peneeta/HGTPhylogeny",
-        "skills": []
+        "date": "April 2025",
+        "description": "Group course project for 02-604 Fundamentals of Bioinformatics focusing on horizontal gene transfer effects on phylogenetic tree topology in bacteria. Detected and interpreted tree topology conflicts in both gene segments (i.e. intragenic conflict) and full gene transfer events.",
+        "link": "https://drive.google.com/file/d/1KguYdVoMPQo6l-weEH7AFCiC7Y5XYyeM/view?usp=sharing",
+        "skills": ["IQTree", "Phylogenetics"]
       }
 ]

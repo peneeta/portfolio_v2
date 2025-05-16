@@ -1,23 +1,22 @@
 [
     {
       "title": "Identifying therapeautic targets of senescence in snRNAseq lung data",
-      "date": "",
-      "description": "The current project I'm working on.",
+      "date": "Current (started 2025)",
+      "description": "The current project I'm working on! Collaboration between the Lugo-Martinez (CMU) and Koenigshoff (Pitt) labs; conducting pathway analysis for samples treated with senescence inducing drugs to find potential targets preventing or reversing senescence.",
       "link": "",
-      "skills": ["pathway analysis"]
+      "skills": ["pathway analysis", "HPC","Seurat", "R", "snRNAseq", "lung"]
     },
     {
-        "title": "Anotha One",
-        "date": "",
-        "description": "",
-        "link": "",
-        "skills": []
+        "title": "Quantifying the Impact of Fra-1 Transcription Factor on Chromatin Accessibility",
+        "date": "2024",
+        "description": "Technically a course project but loosely related to my current work- quantified chromatin accessibility sites in response to the inhibition of Fra-1 transcription factor in triple negative breast cancer using raw ATAC-seq data.",
+        "skills": ["HOMER", "TrimGalore", "FastQC", "Bowtie"]
       },
       {
-        "title": "Another Otha One",
-        "date": "",
-        "description": "",
-        "link": "",
-        "skills": []
+        "title": "Investigating GPCR Receptor-Ligand Binding via Computational Methods",
+        "date": "2023",
+        "description": "DAAD RISE internship at FAU Erlangen (BY, Germany), a crash course in simulating GPCR receptor and ligand binding.",
+        "link": "https://drive.google.com/file/d/1sR6QiLBc9Qc8wj6sK-FkAburG5gTrchl/view?usp=drive_link",
+        "skills": ["PyMOL", "HPC", "GROMACS", "AMBER", "VMD"]
       }
 ]
