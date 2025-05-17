@@ -23,7 +23,7 @@ function Projects({strokeColor, project}) {
                 {project.link && (
                     <div className="links">
                         <a href={project.link} 
-                        target="_blank">🔗 {project.link}</a>
+                        target="_blank">🔗 {project.display_link}</a>
                     </div>
                 )}
 

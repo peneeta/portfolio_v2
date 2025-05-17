@@ -4,6 +4,7 @@
     "date": "May 2025",
     "description": "Second iteration of my personal website, you're on it! Made with React + Vite, first designed in Figma before implementation.",
     "link": "https://github.com/peneeta/portfolio_v2",
+    "display_link": "https://github.com/peneeta/portfolio_v2",
     "skills": ["Tailwind", "React", "JavaScript", "Vite"]
   },
   {
@@ -11,6 +12,7 @@
     "date": "July 2024",
     "description": "Small app that generates musical DNA using PaperJS based on artist obscurity from a user's top artists this month on Spotify. (NOTE the callback might not work for you because of limits to Spotify API calls, please test!)",
     "link": "https://myspotifygenome.peneeta.com/",
+    "display_link": "https://myspotifygenome.peneeta.com/",
     "skills": ["PaperJS", "Vite", "React", "TypeScript"]
   },
   {
@@ -18,6 +20,7 @@
     "date": "May - October 2022",
     "description": "Virginia iGEM 2022 team website, developed for our synthetic biology project AtheroSHuffle: A Novel Point-of-Care Detection Method for Early Atherosclerosis. Largest (and first) web project I've ever developed.",
     "link": "https://2022.igem.wiki/virginia/",
+    "display_link": "https://2022.igem.wiki/virginia/",
     "skills": ["Flask", "HTML/CSS", "Bootstrap"]
   }
 ]

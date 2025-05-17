@@ -9,9 +9,12 @@ function Blog() {
         <>
         {/* Hero/Header section */}
         <div className="hero relative h-120 w-full flex flex-col gap-2 justify-center items-center bg-baby-blue">
-            <h1>Blog</h1>
-            <p>Insights and rambling about things that interest me :3</p>
 
+            <div className="text-center mx-10 max-w-lg">
+                <h1>Blog</h1>
+                <p>Insights and rambling about things that interest me :3</p>
+            </div>
+            
                 {/* Wave divider */}
                 <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
                     <svg className="relative block w-[calc(100%+1.3px)] h-[146px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

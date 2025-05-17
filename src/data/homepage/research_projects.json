@@ -17,6 +17,7 @@
         "date": "2023",
         "description": "DAAD RISE internship at FAU Erlangen (BY, Germany), a crash course in simulating GPCR receptor and ligand binding.",
         "link": "https://drive.google.com/file/d/1sR6QiLBc9Qc8wj6sK-FkAburG5gTrchl/view?usp=drive_link",
+        "display_link": "Molecular Dynamics Walkthrough",
         "skills": ["PyMOL", "HPC", "GROMACS", "AMBER", "VMD"]
       }
 ]

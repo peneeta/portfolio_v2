@@ -1,7 +1,8 @@
-function PostPreview() {
-    // TODO!!!!!!
+function PostPreview({post}) {
+
     return(
         <>
+        
 
         
         </>
