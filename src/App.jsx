@@ -13,6 +13,7 @@ import './index.css'
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import BlogPost from './components/BlogPost';
 
 // Pages
 import Home from './pages/Home';
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/blog" element={<Blog/>} />
+          <Route exact path="/blog/:slug" element={<BlogPost/>} />
         </Routes>
       </Router>
 

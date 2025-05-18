@@ -5,7 +5,7 @@ function Projects({strokeColor, project}) {
 
     return(
         <>
-            <div className={`border ${strokeColor} bg-off-white p-4 rounded-lg`}>
+            <div className={`border ${strokeColor} bg-white p-4 rounded-lg`}>
                 <h3 className="mb-1">{project.title}</h3>
                 <p className="date mb-4">{project.date}</p>
 
