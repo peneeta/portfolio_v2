@@ -1,38 +1,62 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { useNavigate } from "react-router-dom";
+import Markdown from "react-markdown";
+import BlogLottie from "./BlogLottie";
 
-// Preload all blog posts (vite needs all of them loaded)
-const markdownFiles = import.meta.glob('../data/posts/*.md', {
-    query: '?raw',
-    import: 'default',
-  });
+// NOTE: to get the blog posts to render in Vite, add this to vite.config.js
+// assetsInclude: ['**/*.md']
+
+// Import all posts as a glob (needed for Vite)
+const allPosts = import.meta.glob('../data/posts/*.md', { query: '?raw', import: 'default' });
 
 function BlogPost(){
     // Render each blog post using its custom slug
     const { slug } = useParams();
-    const [content, setContent] = useState('');
+    const [post, setPost] = useState('');
 
-    // Load the blog post
+    // useEffect hook for rendering the markdown posts
     useEffect(() => {
-        const path = `../data/posts/${slug}.md`;
-    
-        if (markdownFiles[path]) {
-          markdownFiles[path]().then(setContent);
-        }
-    }, [slug]);
+        const LoadPostMarkdown = async () => {
+
+            // Get current post using slug
+            const currPostPath = `../data/posts/${slug}.md`;
+            
+            // Dynamically import the markdown file
+            const md = await allPosts[currPostPath]();
+            setPost(md)
+        };
+
+        LoadPostMarkdown();
+    }, [slug])
+
+    // Helper for user to navigate back to blogs
+    const navigate = useNavigate();
+    const BackToBlogs = () => {
+        navigate("/blog");
+    }
 
     return(
         <>
-            <div className="p-6 h-screen flex justify-center items-center max-w-3xl space-y-4 text-base leading-relaxed">
-                {/* <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                    {content}
-                </ReactMarkdown> */}
-                <h2>Post Coming Soon</h2>
+            <div className="p-5 mt-30 flex flex-col justify-center items-center">
+                <div className="md-section max-w-8/12">
+                    <Markdown>{post}</Markdown>
+                </div>
+
+                <BlogLottie/>
+
+                <div 
+                onClick={BackToBlogs}
+                className="px-4 py-1 border rounded-full border-dodger-blue cursor-pointer hover:bg-baby-blue hover:text-dodger-blue transition-all ease-in-out">
+                    <p>Back to Blogs</p>
+                </div>
+
+
             </div>
         </>
     )
 }
 
 export default BlogPost
+
+
